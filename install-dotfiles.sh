@@ -25,7 +25,7 @@ fi
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
   echo "removing old configs"
-  rm -rf ~/.config/yt-dlp/config ~/.bashrc ~/.config/git/config ~/.config/mpv /etc/brave/policies/managed/dns.json
+  rm -rf ~/.config/yt-dlp/config ~/.bashrc ~/.config/git/config ~/.config/mpv /etc/brave/policies/managed/dns.json ~/.config/hypr/hyprsunset.conf
 
   cd "$REPO_NAME"
   stow yt-dlp
@@ -33,6 +33,7 @@ if [ $? -eq 0 ]; then
   stow git
   stow mpv
   stow --target=/ brave
+  stow hyprsunset
 else
   echo "Failed to clone the repository."
   exit 1
