@@ -5,6 +5,7 @@
 . ./install-brave.sh
 . ./install-bruno.sh
 . ./install-dbeaver.sh
+. ./install-fileroller.sh
 . ./install-freedownloadmanager.sh
 . ./install-kdeconnect.sh
 . ./install-qbittorrent.sh
