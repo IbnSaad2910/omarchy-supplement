@@ -13,6 +13,7 @@
 . ./install-stow.sh
 . ./install-vscode.sh
 . ./install-ytdlp.sh
+. ./install-mcontrolcenter.sh
 
 # Override dotfiles with stow
 . ./install-dotfiles.sh
